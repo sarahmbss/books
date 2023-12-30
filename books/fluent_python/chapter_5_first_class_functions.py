@@ -88,7 +88,3 @@ from operator import attrgetter
 name_lat = attrgetter('name', 'coord.lat') #Define an attrgetter to retrieve the name and the coord.lat nested attribute
 for city in sorted(metro_areas, key=attrgetter('coord.lat')): #Use attrgetter again to sort list of cities by latitude
     print(name_lat(city)) #Use the attrgetter defined to show only city name and latitude
-
-    
-
-
